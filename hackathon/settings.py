@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'home',
     'teaching',
     'accounts',
-    'crispy_forms'
+    'crispy_forms',
+    'chat'
 
 ]
 
@@ -88,7 +89,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hackathon',
+        'NAME': 'hackathoncopy',
         'USER':'postgres',
         'PASSWORD':'26051999',
         'HOST':'localhost'
@@ -128,10 +129,10 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+#AUTH_USER_MODEL = "accounts.User"
 
 LOGIN_URL='login'
-
+#AUTH_USER_MODEL = "accounts.User"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
